@@ -1,0 +1,39 @@
+In this file and upcoming files we will speak about some solutions of the the equations with just one variable.
+-----------------------------------------------------
+
+What is linear and nonlinear equations?
+
+1) A linear equation is an equation where the variables appear with a power of 1 (no squares, cubes, or other powers), and the equation represents a straight line when graphed. The general form of a linear equation in one variable is:
+
+Examples of Linear Equations
+
+2x+3=0
+
+4x−7y=12
+
+x+2y−3z=5
+
+2) A nonlinear equation is an equation where the variables are raised to powers other than 1 or are multiplied together, making the equation represent curves or more complex shapes when graphed. These equations are not straight lines.
+
+The general forms can vary, but common examples include equations with:
+
+Variables raised to powers other than 1 (e.g., x^2, y^5)
+Variables multiplied together (e.g., xy).
+Functions such as trigonometric, logarithmic, or exponential functions (e.g., sin(x), e^x).
+
+
+Examples of Nonlinear Equations
+
+x^2 + y = 4
+
+sin(x)+y^2 = 1
+
+xy+3x=5
+-----------------------------------------------------
+
+Some equations might have the analytical solution, we can use math to calculate them. However, sometimes we can have the specific kinds of equations which cannot be solved using math.
+In that case, we should use numerical methods to calculate them. In most cases, the result got by using these methods will not be the pure exact, there may be some errors. Our purpose is to make this errors small enough according to our cases.
+
+
+Solution cases for this kind of the equations:
+

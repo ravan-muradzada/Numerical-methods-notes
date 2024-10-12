@@ -1,0 +1,22 @@
+1) Approximations and Error Analysis:
+
+    • Significant Figures
+    • Accuracy and Precision
+    • Error Definitions
+    • Round-Off Errors
+    • The Taylor Series
+    • Error Propagation
+    • Total Numerical Error
+
+2) Solutions of Equations of one Variable
+
+    • The Bisection Method.
+    • The Newton-Raphson Method.
+    • The Secant Method
+    • Nonlinear Systems of Equations.
+    • Problems
+
+3) Iterative Methods for Solving Linear Systems
+    • Newton-Raphson Method
+    • Gauss-Jordan Method
+    • Problems

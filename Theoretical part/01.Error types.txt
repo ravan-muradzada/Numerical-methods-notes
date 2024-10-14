@@ -24,4 +24,24 @@ Arises due to the limitations of representing numbers on a computer. For instanc
 
 
 
+-----------------------------------------------------
 
+Morover, we can divide errors two parts according to other whether the exact value is known or not.
+
+1) True error - It can be computed when the exact value is known.
+There are two kinds of true error: 
+
+-Absolute true error: 
+E = |exactValue - approximateValue|
+
+-Absolute Percent Relative error:
+e = |(exactValue-approximateValue) / exactValue| * 100%
+
+2) Estimaded (approximated) error - We do not need exact root to calculate estimated error.
+There are also two kinds of estimated error:
+
+-Estimaded Absolute error:
+E = |currentEstimate - previousEstimate|
+
+-Estimaded Absolute Percent Relative error:
+e = |(currentEstimate - previousEstimate) / currentEstimate| * 100%

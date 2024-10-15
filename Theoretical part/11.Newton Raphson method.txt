@@ -8,7 +8,7 @@ That method is the fastest way to find the result.
 In this method, firstly the initial candidate number is selected.
 
 Then using this formula, we can find other candidate numbers and tries to approach the real root more:
-x(n) = x(n-1) + f(x(n-1)) - f'(x(n-1)).
+x(n) = x(n-1) + f(x(n-1)) / f'(x(n-1)).
 
 Here, x(n) means n'th candidate number and x(n-1) (n-1)th candidate number. As you can see, in each iteration, we use both given function itself and its derivative.
 

@@ -53,10 +53,6 @@ def graphicalPart():
 
     plt.axhline(0, color='black', lw=2)
     plt.axvline(0, color='black', lw=2)
-    
-    
-
-
     plt.title('Graph of f(x)')
     plt.xlabel('x')
     plt.ylabel('f(x)')

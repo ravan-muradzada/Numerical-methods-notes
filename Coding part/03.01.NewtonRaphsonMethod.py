@@ -9,7 +9,8 @@ def f_derivative(x):
 
 def newtonRaphson(initialGuess, errorValue):
     x_n = initialGuess
-
+    x_n1 = 0
+    
     while True:
         f_xn = f(x_n)
         f_derivative_xn = f_derivative(x_n)

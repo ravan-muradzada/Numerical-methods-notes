@@ -43,9 +43,9 @@ intialGuess = np.array([
 #------------------------------------------
 # Newton Raphson result
 
-'''result = newtonRaphson(intialGuess)
+result = newtonRaphson(intialGuess)
 
-print(result)'''
+#print(result)
 
 #------------------------------------------
 #Checking

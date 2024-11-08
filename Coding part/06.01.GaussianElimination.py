@@ -11,10 +11,10 @@ def forwardElimination(matrix, b):
         if matrix[k][k] == 0:
             return "Failed! Matrix should not be singular!"
         
-        for i in range(k+1, n):
+        for i in range(k+1, n): # iteration rows
             factor = matrix[i][k] / matrix[k][k]
 
-            for j in range(k, n):
+            for j in range(k, n): # iteration columns
                 matrix[i][j] -= factor * matrix[k][j]
             b[i] -= factor * b[k]
     return matrix, b

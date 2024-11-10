@@ -1,6 +1,6 @@
 import numpy as np
 
-def thomas_algorithm(b, d, c, rhs):
+def f(b, d, c, rhs):
     n = len(d)
     c_prime = np.zeros(n - 1)
     d_prime = np.zeros(n)
@@ -25,5 +25,5 @@ d = np.array([10, 20, 30, 40, 50])  # main diagonal elements
 c = np.array([1, 2, 3, 4, 0])  # super-diagonal elements
 rhs = np.array([1, 2, 1, -1, 1])  # right-hand side vector
 
-solution = thomas_algorithm(b, d, c, rhs)
+solution = f(b, d, c, rhs)
 print("Solution:", solution)

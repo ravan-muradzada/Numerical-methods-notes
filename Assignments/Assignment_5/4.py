@@ -20,10 +20,11 @@ def thomas_algorithm(b, d, c, rhs):
 
     return x
 
-b = np.array([0, 5, 6, 7, 8])  # sub-diagonal elements
-d = np.array([10, 20, 30, 40, 50])  # main diagonal elements
-c = np.array([1, 2, 3, 4, 0])  # super-diagonal elements
-rhs = np.array([1, 2, 1, -1, 1])  # right-hand side vector
+
+b = np.array([0, 3, 2, 1])  # sub-diagonal elements
+d = np.array([1, 4, 3, 3])  # main diagonal elements
+c = np.array([4, 1, 4, 0])  # super-diagonal elements
+rhs = np.array([1, 1, 1, 1])  # right-hand side vector
 
 solution = thomas_algorithm(b, d, c, rhs)
 print("Solution:", solution)

@@ -1,0 +1,13 @@
+A Diagonally Dominant Tridiagonal matrix is a special kind of matrix. (For more info, look at 05).
+
+To solve that kind of equations we have special method which is more efficient than standard Gaussian elimination method. That is called Thomas algorithm.
+
+(As you know the elements below the main diagonal in that kind of matrices are called subdiagonal, and the ones above are called superdiagonal.)
+
+In nxn matrix, let's call main diagonal elements as d.
+Subdiagonal is a and superdiagonal is c.
+B is the set of right-hand side of matrix.
+
+
+
+

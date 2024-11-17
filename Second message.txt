@@ -1,0 +1,5 @@
+Hello teacher, I hope you are doing well. I have a problem also related to another topic which is "Solving tridiagonal systems". 
+You did not give us any code about it, but the mathematical formulas and solution. 
+I think, you have made two little mistakes in your formulas.
+The both mistakes are in the "Forward Elimination" step.
+

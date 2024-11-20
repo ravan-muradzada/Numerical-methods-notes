@@ -69,3 +69,4 @@ Open methods:
 1. Fixed-Point Iteration
 2. Newton-Raphson Method
 3. Secant Method
+4. Modified Secant Method

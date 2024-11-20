@@ -11,11 +11,7 @@ def bisectionMethod(lowerBound, upperBound, exactValue, errorValue):
 
     while True:
         currentValue = (lowerBound + upperBound) / 2.0
-        n += 1
-
-        print(f"Iteration:{n}\tCurrent Boundaries:\t[{lowerBound}, {upperBound}], currentValue is "
-              f"{currentValue} and f(currentValue) = {function(currentValue)}")
-        # If it is needed we can print each time something like this
+  
 
         if function(currentValue) == 0:
             # currentValue is exact root
@@ -31,7 +27,7 @@ def bisectionMethod(lowerBound, upperBound, exactValue, errorValue):
             # that means, we should stop the process.
             break
 
-    return (lowerBound + upperBound) / 2.0
+    return currentValue
 
 lowerBound, upperBound = 0, 1
 exactValue = 2 - sqrt(2)

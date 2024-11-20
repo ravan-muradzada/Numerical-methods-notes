@@ -55,7 +55,7 @@ def secantMethod(x0, x1):
         relativeError = calculateApproximatePercentRelativeError(xn1, xn)
         print(f"Secant, iteration: {currentIteration}, relative error: {relativeError} %")
 
-
+ 
         if abs(xn1 - xn) < errorValue:
             return xn1, currentIteration
 
@@ -91,7 +91,7 @@ def modifiedSecantMethod(initalGuess):
 # ----------------------------------------------------------------------------- #
 
 # Newton Raphson method part
-resultFromNewtonRaphson, iterationCount1 = newtonRaphsonMethod(initialGuess=3) # Newton-Raphson part
+resultFromNewtonRaphson, iterationCount1 = newtonRaphsonMethod(initialGuess=3.058) # Newton-Raphson part
 print(f"*Result from Newton-Raphson method: {resultFromNewtonRaphson}, iterationCount: {iterationCount1}")
 
 print(f"**Checking Newton Raphson method: {f(resultFromNewtonRaphson)}\n\n")
@@ -99,14 +99,14 @@ print(f"**Checking Newton Raphson method: {f(resultFromNewtonRaphson)}\n\n")
 # ----------------------------------------------------------------------------- #
 
 # Secant method part
-resultFromSecantMethod, iterationCount2 = secantMethod(x0 = 3, x1 = 3.5)
+resultFromSecantMethod, iterationCount2 = secantMethod(x0 = 3.058322957107139, x1 = 3.058322957107141)
 print(f"*Result from Secant method: {resultFromSecantMethod}, iterationCount: {iterationCount2}")
 print(f"**Checking Secant method: {f(resultFromSecantMethod)}\n\n")
 
 # ----------------------------------------------------------------------------- #
 
 # Modified Secant method part
-resultFromModifiedSecantMethod, iterationCount3 = modifiedSecantMethod(initalGuess=3)
+resultFromModifiedSecantMethod, iterationCount3 = modifiedSecantMethod(initalGuess=3.058)
 print(f"*Resulf from Modified Secant method: {resultFromModifiedSecantMethod}, iterationCount: {iterationCount3}")
 print(f"**Checking Modified Secant method: {f(resultFromModifiedSecantMethod)}\n\n")
 

@@ -1,4 +1,3 @@
-from math import *
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -23,7 +22,6 @@ def bisectionMethod(a, b, iterationCount):
         print("Bisection method has failed!")
         return None
     mid = 0 # initialize
-    previous = 0
 
     previous = None
 
@@ -32,15 +30,17 @@ def bisectionMethod(a, b, iterationCount):
         fmid = f(mid)
         
         trueErrors.append(FindTrueAbsolutePercentRelativeError(mid))
+
         estimatedErrors.append(FindEstimatedAbsolutePercentRelativeError(mid, previous))
 
         if f(mid) == 0:
             # mid is exact root
             break
-        elif f(a) * f(mid) > 0:
+        elif f(a) * fmid > 0:
             a = mid
         else:
             b = mid
+
         previous = mid
 
     return mid

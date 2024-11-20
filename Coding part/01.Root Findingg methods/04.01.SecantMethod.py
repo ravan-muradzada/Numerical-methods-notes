@@ -7,9 +7,9 @@ def secant(x0, x_1, errorValue):
     xn = x0
     xn_1 = x_1
 
-    # xn means x(n)
-    # xn_1 means x(n-1)
-    # xn1 means x(n+1)
+    # xn means x(n) 1
+    # xn_1 means x(n-1) 0
+    # xn1 means x(n+1) 2
 
     while True:
         f_xn = f(xn)

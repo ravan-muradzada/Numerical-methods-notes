@@ -32,10 +32,10 @@ Morover, we can divide errors two parts according to other whether the exact val
 There are two kinds of true error: 
 
 -Absolute true error: 
-E = |exactValue - approximateValue|
+E = |exactValue - approximateValue| = Et
 
 -Absolute Percent Relative error:
-e = |(exactValue-approximateValue) / exactValue| * 100%
+e = |(exactValue-approximateValue) / exactValue| * 100% = et
 
 2) Estimaded (approximated) error - We do not need exact root to calculate estimated error.
 There are also two kinds of estimated error:

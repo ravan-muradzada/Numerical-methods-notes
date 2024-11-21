@@ -14,12 +14,12 @@ def f(x):
     Some methods of matplotlib:
 
     1. plot(x, y, label = "...", color = "...")
-        This function sketches the graph according to x and y values. Note that, we x and y should be sequence (like array).
+        This function sketches the graph according to x and y values. Note that, our x and y should be sequence (like array).
         Such us, x = np.array([1, 4, 8, 9])  and y = f(x). Here it calculates the results according to f function using elements of x. 
         Then sketch the graph according to these values.
-        However, it is better to use linspace(..) method for x, instead. How does it work? -> The first and second parameters are starting and stopping points of x, correspondly. The third parameter is the number of points between start and stop points. So the sequence is divided to the number of parts (=third parameterer). linspace(...) functions comes from numpy.
+        However, it is better to use linspace(..) method for x, instead. How does it work? -> The first and second parameters are starting and stopping points of x, correspondingly. The third parameter is the number of points between start and stop points. So the sequence is divided to the number of equal parts (=third parameterer). linspace(...) functions comes from numpy.
 
-        If we want to show just one point in the graph, we can also use this function, but here we should specify the color of the point.
+        If we want to show just one point in the graph, we can also use plot() function, but here we should specify the color of the point.
         Note that, the color should be always the third variable and written using "*" then the first letter of the color, like "*r" for red.
 
         In the method, label parameter writes about the function. We can write anything here.
@@ -30,7 +30,7 @@ def f(x):
         This method gives the title to the graph. Anything we can write here.
     
     3. xlabel(...) and ylabel(...)
-        These give the names to x and y labels, correspondly.
+        These give the names to x and y labels, correspondingly.
 
     4. grid(True)
         This method enables the grids in the graph.

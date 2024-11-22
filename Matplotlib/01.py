@@ -59,8 +59,6 @@ def f(x):
         (start, stop) is the range here for y.
         Any data points outside this range will not be displayed.
         It is useful for zooming in on a specific region of the plot along the y-axis.
-
-
 '''
 
 #x = np.array([1, 4, 8, 9])

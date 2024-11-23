@@ -11,9 +11,11 @@ We have a formula to find f(x):
 f(x) = b0 + b1 * (x-x0) + b2 * (x-x0)*(x-x1)
 
 Here to find each b:
+(Let's say y0 = f(x0) and y1 = f(x1)).
 
-b0 = f(x0)
+b0 = y0
 
-b1 = (f(x1) - f(x0)) / (x1 - x0)
+b1 = (y1 - y0) / (x1 - x0)
 
-b2 = ((f(x2) - f(x1)) - b1) / (x2 - x0) 
+b2 = ( (y2 - y1)/(x2 - x1) - (y1 - y0)/(x1 - x0) ) / (x2 - x0)
+

@@ -45,12 +45,12 @@ intialGuess = np.array([
 
 result = newtonRaphson(intialGuess)
 
-#print(result)
+print(result)
 
 #------------------------------------------
 #Checking
 
-#print(f"Checking: {f(result)}")
+print(f"Checking: {f(result)}")
 
 #------------------------------------------
 
@@ -89,4 +89,4 @@ def sketchGraph():
 # If you want to sketch the graph, you should use newtonRaphson method,
 # because I have used roots from the method in the graph. 
 
-#sketchGraph()
+sketchGraph()

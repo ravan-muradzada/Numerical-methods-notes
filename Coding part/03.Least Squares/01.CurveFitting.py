@@ -10,7 +10,7 @@ def solution_1(x, y):
     n = len(x)
     matrix = np.array([[sum(x**2), sum(x)], [sum(x), n]])
     right_hand_side = np.array([sum(x*y), sum(y)])
-    result_list = np.linalg.inv(matrix).dot(right_hand_side)
+    result_list = np.linalg.solve(matrix, right_hand_side)
 
     return result_list
 

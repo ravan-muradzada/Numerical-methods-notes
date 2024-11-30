@@ -5,7 +5,7 @@ def thomas_algorithm(abovePart, mainDiagonal, belowPart, rightHandSide):
     x = np.zeros(n, dtype=float)
 
     for i in range(1, n):
-        factor = belowPart[i] / mainDiagonal[i-1]
+        factor = belowPart[i-1] / mainDiagonal[i-1]
 
         mainDiagonal[i] -= abovePart[i-1] * factor
         rightHandSide[i] -= factor * rightHandSide[i-1]
@@ -25,9 +25,9 @@ matrix = np.array([
     [0, 0, 1, 3]
 ]) # For checking the results
 
-belowPart = np.array([0, 3, 2, 1], dtype=float)  # sub-diagonal elements
+belowPart = np.array([3, 2, 1], dtype=float)  # sub-diagonal elements
 mainDiagonal = np.array([1, 4, 3, 3], dtype=float)  # main diagonal elements
-abovePart = np.array([4, 1, 4, 0], dtype=float)  # super-diagonal elements
+abovePart = np.array([4, 1, 4], dtype=float)  # super-diagonal elements
 rightHandSide = np.array([1, 1, 1, 1], dtype=float)  # right-hand side elements
 
 print(f"\nPython numpy build-in function's solution: \n{np.linalg.inv(matrix).dot(rightHandSide)}\n\n")

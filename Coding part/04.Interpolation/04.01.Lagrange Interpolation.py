@@ -26,8 +26,8 @@ def lagrange_interpolation(x_values, y_values, x):
 
 x_values = np.array([1, 3, 5, 7, 13], dtype=float)
 y_values = np.array([800, 2310, 3090, 3940, 4755], dtype=float)
-x_to_interpolation = 7.5
+y_to_interpolation = 4192.72705078125
 
-calculated_result = lagrange_interpolation(x_values, y_values, x_to_interpolation)
+calculated_result = lagrange_interpolation(y_values, x_values, y_to_interpolation)
 
 print(calculated_result)

@@ -28,6 +28,7 @@ x = 25
 h = 2
 exact_value = calculate_exact_result(x)
 print(f"\nExact value: {exact_value:.3f}\n\n")
+
 #---------------------------------------------------#
 # Forward difference
 

@@ -36,6 +36,9 @@ for i in range(n):
 
 
 print()
+
+print("I tried to use mostly central difference, because it is the best one, when it is not available to use it, I used forward or backward difference.\n")
+
 for i in range(n):
     print(i+1, end=") ")
 
@@ -46,5 +49,5 @@ for i in range(n):
     else:
         accelerations[i] = central_difference(t, velocities, i)
 
-    print(f"t={t[i]}, current velocity: {velocities[i]:.3f}, current acceleration: {accelerations[i]:.3f}\n")
+    print(f"t={t[i]}, current velocity: {velocities[i]:.3f} km/s, current acceleration: {accelerations[i]:.3f} km/s^2\n")
     

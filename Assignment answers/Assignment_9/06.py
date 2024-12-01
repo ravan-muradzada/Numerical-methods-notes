@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.interpolate import interp1d
 
 def forward_difference(t, v, i):
     return (v[i+1] - v[i]) / (t[i+1] - t[i])
@@ -7,9 +8,9 @@ def central_difference(t, v, i):
     return (v[i+1] - v[i-1]) / (t[i+1] - t[i-1])
 
 def trapezoidal_integration(t, v, start, end):
-    distance = 0
+    distance = 0.0
 
-    for i in range(start, end+1):
+    for i in range(start, end):
         distance += 0.5 * (t[i+1] - t[i]) * (v[i+1] + v[i])
     
     return distance
@@ -29,7 +30,6 @@ end = 7# index when t = 28
 
 distance = trapezoidal_integration(t, v, start, end)
 print(f"Distance t = 0 to 28: {distance:.3f}\n\n")
-
 
 #----------------------------------------------------#
 # b

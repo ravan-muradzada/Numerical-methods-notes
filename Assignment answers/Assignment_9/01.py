@@ -17,8 +17,8 @@ def richardson_extrapolation(x, h, n):
     
     for j in range(1, n):
         for i in range(n):
-            approximations[i][j] = approximations[i][j-1] + ((approximations[i][j-1] - approximations[i-1][j-1]) / (4**(j-1)))
-    
+            approximations[i][j] = approximations[i][j-1] + ((approximations[i][j-1] - approximations[i-1][j-1]) / ((4**j) - 1))
+
     return approximations[-1][-1]
 
 
@@ -37,30 +37,27 @@ exact_value = -0.9125
 central_difference_h1 = FI(x, h1)
 central_difference_h2 = FI(x, h2)
 
-print(f"\nCentral difference when h1 = {h1}: {central_difference_h1:.3f}")
-print(f"Central difference when h2 = {h2}: {central_difference_h2:.3f}\n\n")
+print(f"\nCentral difference when h1 = {h1}: {central_difference_h1}")
+print(f"Central difference when h2 = {h2}: {central_difference_h2}\n\n")
 
 #---------------------------------------------------#
 # Richardson extrapolation for h1
 
 estimation_h1 = richardson_extrapolation(x, h1, n)
 error_h1 = abs((exact_value - estimation_h1) / exact_value) * 100
-print(f"Result from h1 = {h1}: {estimation_h1:.3f}")
-print(f"True Percent Relative Error when h = {h1}: {error_h1:.3f} %\n\n")
+
+print(f"Result from h = {h1}: {estimation_h1}")
+print(f"True Percent Relative Error when h = {h1}: {error_h1} %\n\n")
 
 #---------------------------------------------------#
 # Richardson extrapolation for h2
 
 estimation_h2 = richardson_extrapolation(x, h2, n)
 error_h2 = abs((exact_value - estimation_h2) / exact_value) * 100
-print(f"Result from h2 = {h2}: {estimation_h2:.3f}")
-print(f"True Percent Relative Error when h = {h2}: {error_h2:.3f} %\n\n")
+print(f"Result from h = {h2}: {estimation_h2}")
+print(f"True Percent Relative Error when h = {h2}: {error_h2} %\n\n")
 
 #---------------------------------------------------#
 # Exact result
-double = lambda x: x * 2
 
-derivate_of_function = lambda x: (-0.4*(x**3) - 0.45*x*x - x - 0.25)
-
-exact_result = derivate_of_function(x)
-print(f"Exact result: {exact_result:.3f}\n")
+print(f"Exact result: {exact_value}\n")

@@ -28,6 +28,7 @@ x = np.pi / 4
 h = np.pi / 12
 exact_value = calculate_exact_result(x)
 print(f"\nExact value: {exact_value:.3f}\n\n")
+
 #---------------------------------------------------#
 # Forward difference
 

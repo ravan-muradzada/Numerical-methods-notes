@@ -22,12 +22,14 @@ def recursive_trapezoid(f,a,b,n):
             s += f(a + (2*k-1) * h)
 
         R[i,0] = R[i-1,0] / 2 + h * s
+        
     return R
 
-def romberg(approximations, n):
-    for n in range (1, n):
+def romberg(approximations, N):
+    for n in range (1, N):
         for m in range (1, n+1):
             approximations[n,m]=(4**m*approximations[n, m-1]-approximations[n-1, m-1])/(4**m-1)
+
     return approximations
 
 a1, b1 = 1, 2
@@ -38,16 +40,16 @@ n = 5
 print("\nThe first integral:")
 R1 = recursive_trapezoid(f1, a1, b1, n)
 R1 = romberg(R1, n)
-print(f"R[3][3]: {R1[3][3]}")
+print(f"R[3][3]: {R1[3][3]:.4f}")
 
 print("\nThe second integral:")
 R2 = recursive_trapezoid(f2, a2, b2, n)
 R2 = romberg(R2, n)
-print(f"R[3][3]: {R2[3][3]}")
+print(f"R[3][3]: {R2[3][3]:.4f}")
 
 print("\nThe third integral:")
 R3 = recursive_trapezoid(f3, a3, b3, n)
 R3 = romberg(R3, n)
-print(f"R[3][3]: {R3[3][3]}")
+print(f"R[3][3]: {R3[3][3]:.4f}")
 
 

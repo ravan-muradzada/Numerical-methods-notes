@@ -3,7 +3,8 @@ import numpy as np
 def f(x):
     return np.cos(x + x**3)
 
-# If we use just recursive trapezoid method (not romberg), we can use an array instead of matrix.
+print("If we use just recursive trapezoid method (not romberg), we can use an array instead of matrix.")
+
 def recursive_trapezoid(f, a, b, n):
     approximations = np.zeros(n)
     approximations[0] = (f(a) + f(b)) * (b - a) / 2.0
@@ -30,5 +31,5 @@ print(f"\n\nR[3] = {approximations[3]:.3f}\n")
 
 f_max_2 = 1
 h = (b - a) / n 
-error_estimate = (b - a) * h*h / 12 * f_max_2
+error_estimate = ((b-a) * h * h * f_max_2) / 12
 print(f"Error estimate: {error_estimate}")

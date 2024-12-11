@@ -47,7 +47,7 @@ print(results)
 plt.figure(figsize=(10, 6))
 
 
-plt.plot(x_values, y_values, label="Second Order Taylor Series Method", marker = 'o', color="red")
+plt.plot(x_values, y_values, label="Second Order Taylor Series Method",color="red")
 plt.xlabel('x')
 plt.ylabel('y(x)')
 plt.title('Taylor series method implementation')

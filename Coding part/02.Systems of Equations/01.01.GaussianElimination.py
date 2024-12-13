@@ -36,14 +36,15 @@ def backSubstitution(matrix, b):
     return resultsList
 
 matrix = [
-    [2, 8, 2],
-    [1, 6, -1],
-    [2, -1, 2]
+    [1, 1, 1],
+    [2, 4, -3],
+    [-1, 2, 2]
 ]
 
-b = [14, 13, 5]
+b = [4, -9, 2]
 
 m = forwardElimination(matrix, b)
 resultList = backSubstitution(m[0], m[1])
 print(matrix)
+print(b)
 print(resultList)
